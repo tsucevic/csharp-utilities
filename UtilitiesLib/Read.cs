@@ -3,6 +3,9 @@ using System.Xml.Linq;
 
 namespace UtilitiesLib
 {
+    /// <summary>
+    /// Library for console reads.
+    /// </summary>
     public class Read
     {
         /// <summary>
