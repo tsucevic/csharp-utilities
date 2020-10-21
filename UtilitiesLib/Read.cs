@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace UtilitiesLib
 {
-    public class Utilities
+    public class Read
     {
         /// <summary>
         /// Reads string from console and saves to variable.
@@ -11,7 +11,7 @@ namespace UtilitiesLib
         /// <param name="message">A message to print out to the user.</param>
         /// <param name="outputVariable">Variable in which the string will be saved.</param>
         /// <returns>User input.</returns>
-        public static string ReadString(string message, out string outputVariable)
+        public static string String(string message, out string outputVariable)
         {
             do
             {
@@ -27,9 +27,9 @@ namespace UtilitiesLib
         /// </summary>
         /// <param name="message">A message to print out to the user.</param>
         /// <returns>User input.</returns>
-        public static string ReadString(string message)
+        public static string String(string message)
         {
-            ReadString(message, out string s);
+            String(message, out string s);
             return s;
         }
 
@@ -39,7 +39,7 @@ namespace UtilitiesLib
         /// <param name="message">A message to print out to the user.</param>
         /// <param name="outputVariable">Variable in which the int will be saved.</param>
         /// <returns>User input.</returns>
-        public static int ReadInt(string message, out int outputVariable)
+        public static int Int(string message, out int outputVariable)
         {
             do
             {
@@ -54,9 +54,9 @@ namespace UtilitiesLib
         /// </summary>
         /// <param name="message">A message to print out to the user.</param>
         /// <returns>User input.</returns>
-        public static int ReadInt(string message)
+        public static int Int(string message)
         {
-            ReadInt(message, out int n);
+            Int(message, out int n);
             return n;
         }
 
@@ -66,7 +66,7 @@ namespace UtilitiesLib
         /// <param name="message">A message to print out to the user.</param>
         /// <param name="outputVariable">Variable in which the double will be saved.</param>
         /// <returns>User input.</returns>
-        public static double ReadDouble(string message, out double outputVariable)
+        public static double Double(string message, out double outputVariable)
         {
             do
             {
@@ -81,9 +81,9 @@ namespace UtilitiesLib
         /// </summary>
         /// <param name="message">A message to print out to the user.</param>
         /// <returns>User input.</returns>
-        public static double ReadDouble(string message)
+        public static double Double(string message)
         {
-            ReadDouble(message, out double n);
+            Double(message, out double n);
             return n;
         }
     }
